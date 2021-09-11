@@ -1,0 +1,89 @@
+
+
+QUIZ _ WEEK 3 -----*-*-*-*-*-*-*-*-------
+
+Priority Queues -----------------------------------------------------------------------------------------------------------------------------------------------
+**************************************
+
+
+1.
+Question 1
+IMG: https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/FLs4svN3EeWAQhLLv31W2Q_e231bab45fccf62a42ba23a239cfb428_h2.png?expiry=1631491200000&hmac=yXfcngCkF6C-36HP3PgeFj5Ee4MKJl78uU9bIuPORuc
+
+How many edges of this binary tree violate the min-heap property? In other words, for how many edges of the tree, the parent value is greater than the value of the child?
+
+
+
+
+>> 4
+
+
+
+
+2.
+Question 2
+IMG: https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/T2yX2vN4EeWSuRKahzbc9Q_3cea63a59918d79e415727e22e66aee4_h3.png?expiry=1631491200000&hmac=n3DR7GBqkFGvZG9ZV8Sz5XANcM-foRR2BxpwzLUWCWE
+
+This binary tree contains 13 nodes, and hence we have 13 subtrees here (rooted at each of 13 nodes). How many of the subtrees are complete?
+
+
+
+
+>> 11
+
+
+
+
+3.
+Question 3
+Consider a complete binary tree represented by an array [19,14,28,15,16,7,27,15,21,21,5,2][19,14,28,15,16,7,27,15,21,21,5,2].
+
+How many edges of this tree violate the max-heap property? In other words, for how many edges of the tree, the parent value is smaller than the value of the child?
+
+
+
+
+>> 5
+
+
+
+
+4.
+Question 4
+Assume that a max-heap with 10^5 elements is stored in a complete 5-ary tree. Approximately how many comparisons a call to Insert() will make?
+
+
+
+
+>>  8
+
+
+
+
+5.
+Question 5
+Assume that a max-heap with 10^6 elements is stored in a complete 7-ary tree. Approximately how many comparisons a call to ExtractMax() will make?
+
+
+
+
+>>  50
+
+
+
+
+6.
+Question 6
+Assume that we represent a complete d-ary tree in  an array A[1…n] (this is a 1-based array of size n). What is the right formula for the indices of children of a node number i?
+
+
+
+
+>>  {(i-1)d+2,....,min{n,(i-1)d +d+1}}
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@ CODED BY TSG405, 2021
+************************
