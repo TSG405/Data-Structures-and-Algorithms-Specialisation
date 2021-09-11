@@ -1,0 +1,59 @@
+
+
+QUIZ _ WEEK 4 -----*-*-*-*-*-*-*-*-------
+
+Hash Tables and Hash Functions -----------------------------------------------------------------------------------------------------------------------------------------------
+**************************************
+
+
+1.
+Question 1
+What is the size of the array needed to store integer keys with up to 12 digits using direct addressing?
+
+
+
+
+>>  10^12
+
+
+
+
+2.
+Question 2
+What is the maximum possible chain length for a hash function h(x) = x mod 1000 used with a hash table of size 1000 for a universe of all integers with at most 12 digits?
+
+
+
+
+>>  10 ^ 9
+
+
+
+
+3.
+Question 3
+You want to hash integers from 0 up to 1000000. What can be a good choice of p for the universal family?
+
+
+
+
+>>  1000003
+
+
+
+
+4.
+Question 4
+How can one build a universal family of hash functions for integers between −1000000 (minus one million) and 1000000 (one million)?
+
+
+
+
+>>  First, add 1000000 to each integer and get the range of integers between 0 and 2000000. Then use the universal family for integers with p=2000003.
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@ CODED BY TSG405, 2021
+************************
