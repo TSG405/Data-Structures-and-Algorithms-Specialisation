@@ -1,0 +1,47 @@
+
+
+QUIZ _ WEEK 4 -----*-*-*-*-*-*-*-*-------
+
+Hashing -----------------------------------------------------------------------------------------------------------------------------------------------
+**************************************
+
+
+1.
+Question 1
+What is the minimum size of an array that can be used in the direct addressing scheme to store a map from 7-digit phone numbers to names?
+
+
+
+
+>>  10000000
+
+
+
+
+2.
+Question 2
+If it is guaranteed that the total length of all occurrences of a Pattern in a Text is at most L, which of the below estimates of the average running time of Rabin-Karp's algorithm to find all occurrences of the Pattern in the Text is the most tight out of the correct ones?
+
+
+
+
+>>  O(∣Text∣+∣Pattern∣+L)
+
+
+
+
+3.
+Question 3
+Let us slightly change the polynomial hash function for strings and set h(S) = (\sum\limits_{j = 0}^{|S|-1} x^{|S|-1-j}S[j]) \bmod ph(S)=(j=0∑∣S∣−1x ∣S∣−1−jS[j])modp. Let us fix some Text and some Pattern. Denote by H[i] the hash function of the substring Text[i..i+∣Pattern∣−1] of the Text starting from position i and having the same length as Pattern (for all appropriate positions i where the Pattern can occur in the Text). Which of the below formulas is the correct recurrence to compute H[i+1] given H[i]?
+
+
+
+
+>>  H[i+1]=(xH[i]+Text[i+∣Pattern∣]−x ∣Pattern∣Text[i])modp
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@ CODED BY TSG405, 2021
+************************
