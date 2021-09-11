@@ -1,0 +1,60 @@
+
+
+QUIZ _ WEEK 3 -----*-*-*-*-*-*-*-*-------
+
+Priority Queues and Disjoint Sets -----------------------------------------------------------------------------------------------------------------------------------------------
+**************************************
+
+
+1.
+Question 1
+You know from the lectures that a heap can be built from an array of n integers in O(n) time. Heap is ordered such that each parent node has a key that is bigger than both children's keys. So it seems like we can sort an array of n arbitrary integers in O(n) time by building a heap from it. Is it true?
+
+
+
+
+>>  No
+
+
+
+
+2.
+Question 2
+You've organized a party, and your new  robot is going to meet and greet the guests. However, you need to program your robot to specify in which order to greet the guests. Of course, guests who came earlier should be greeted before those who came later. If several guests came at the same time or together, however, you want to greet first the older guests to show them your respect. You want to use a min-heap in the program to determine which guest to greet next. What should be the comparison operator of the min-heap in this case?
+
+
+
+
+>>  def GreetBefore(A, B):
+      if A.arrival_time != B.arrival_time:
+        return A.arrival_time < B.arrival_time
+    return A.age > B.age
+  
+  
+  
+  
+3.
+Question 3
+You want to implement a Disjoint Set Union data structure using both path compression and rank heuristics. You also want to store the size of each set to retrieve it in O(1). To do this, you've already created a class to store the nodes of DSU and implemented the Find method using the path compression heuristic. You now need to implement the UnionUnion method which will both use rank heuristics and update the size of the set. Which one is the correct implementation?
+
+
+
+
+>>  def Union(a, b):
+      pa = Find(a)
+      pb = Find(b)
+      if pa.rank <= pb.rank:
+        pa.parent = pb
+        pb.size += pa.size
+        if pa.rank == pb.rank:
+          pb.rank += 1
+      else:
+         pb.parent = pa
+         pa.size += pb.size
+         
+         
+         
+         
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@ CODED BY TSG405, 2021
+************************
